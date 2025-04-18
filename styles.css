@@ -481,34 +481,31 @@ header {
 }
 
 .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+gap: 30px;
 }
 
 @media (max-width: 768px) {
-    .testimonial-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: 20px;
-        padding-bottom: 20px;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
-        width: 100%; /* Ensure full width */
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+.testimonial-grid {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+gap: 20px;
+padding-bottom: 20px;
+-webkit-overflow-scrolling: touch;
+scrollbar-width: none; /* Firefox */
+}
 
-    .testimonial-grid::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
-    }
+.testimonial-grid::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera */
+}
 
-    .testimonial-card {
-        flex: 0 0 85%;
-        scroll-snap-align: center;
-        min-width: 280px;
-    }
+.testimonial-card {
+flex: 0 0 85%;
+scroll-snap-align: center;
+min-width: 280px;
+}
 }
 
 .testimonial-card {
@@ -1038,7 +1035,6 @@ footer {
     padding: 10px 20px;
     margin: 30px 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure full width */
 }
 
 .search-bar i {
@@ -1671,30 +1667,6 @@ footer {
     .section-header.left-aligned .section-subtitle {
         margin: 0 auto;
     }
-    
-    /* Fix for mobile width issues */
-    .container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-    }
-    
-    .category-grid, 
-    .items-grid, 
-    .featured-dishes-slider, 
-    .gallery-grid, 
-    .blog-grid {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .search-bar,
-    .section-title,
-    .section-header {
-        width: 100%;
-    }
 }
 
 @media (max-width: 576px) {
@@ -1721,23 +1693,6 @@ footer {
     
     .reservation-form-container {
         padding: 25px;
-    }
-    
-    /* Additional fixes for very small screens */
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .category-item {
-        min-width: 120px;
-    }
-    
-    .item-card,
-    .featured-dish,
-    .blog-card,
-    .testimonial-card {
-        width: 100%;
     }
 }
 
@@ -1843,33 +1798,112 @@ footer {
     }
 }
 
+/* Mobile menu */
+.nav-links.show {
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background-color: var(--dark);
+padding: 20px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+z-index: 999;
+animation: slideDown 0.3s ease forwards;
+}
+
+.nav-links.show a {
+margin: 10px 0;
+font-size: 1.1rem;
+}
+
+@keyframes slideDown {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Hamburger menu anmn */
+.mobile-menu-btn {
+position: relative;
+width: 30px;
+height: 30px;
+display: none;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: all 0.3s ease;
+z-index: 1000;
+}
+
+.mobile-menu-btn span {
+position: absolute;
+width: 25px;
+height: 3px;
+background-color: white;
+border-radius: 3px;
+transition: all 0.3s ease;
+}
+
+.mobile-menu-btn span:nth-child(1) {
+transform: translateY(-8px);
+}
+
+.mobile-menu-btn span:nth-child(3) {
+transform: translateY(8px);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+transform: translateY(0) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+transform: translateY(0) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+.mobile-menu-btn {
+display: flex;
+}
+}
+
 /* Mobile nav */
 @media (max-width: 768px) {
-    .location {
-        display: none;
-    }
+.location {
+display: none;
+}
 
-    .nav-links.show {
-        padding-bottom: 70px;
-    }
+.nav-links.show {
+padding-bottom: 70px;
+}
 
-    .mobile-location {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 15px;
-        margin-top: 20px;
-        border-radius: 10px;
-    }
+.mobile-location {
+display: flex;
+align-items: center;
+gap: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+padding: 15px;
+margin-top: 20px;
+border-radius: 10px;
+}
 
-    .mobile-location i {
-        color: var(--primary);
-        font-size: 1.2rem;
-    }
+.mobile-location i {
+color: var(--primary);
+font-size: 1.2rem;
+}
 
-    .mobile-location-text {
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.9);
-    }
+.mobile-location-text {
+font-size: 0.9rem;
+color: rgba(255, 255, 255, 0.9);
+}
 }
