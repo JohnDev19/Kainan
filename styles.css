@@ -22,12 +22,11 @@ body {
     background-color: var(--light);
     color: var(--dark);
     overflow-x: hidden;
-    width: 100%;
 }
 
 .container {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -1907,4 +1906,30 @@ font-size: 1.2rem;
 font-size: 0.9rem;
 color: rgba(255, 255, 255, 0.9);
 }
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* For tablets and smaller devices */
+@media (max-width: 992px) {
+    section {
+        padding: 60px 0;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+}
+
+/* For very small devices (phones) */
+@media (max-width: 576px) {
+    section {
+        padding: 20px 0;
+    }
 }
