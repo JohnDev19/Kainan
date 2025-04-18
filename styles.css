@@ -14,6 +14,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+section, div, header, footer, nav, main {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .h2 {
     font-size: 1.8rem;
 }
@@ -29,6 +42,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -1793,8 +1807,66 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .mobile-menu-btn {
-        display: flex;
+    .mobile-nav {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+    
+    .container,
+    .header-container,
+    .category-grid,
+    .items-grid,
+    .testimonial-grid,
+    .featured-dishes-slider,
+    .gallery-grid,
+    .blog-grid,
+    .section-header,
+    .section-title,
+    .footer-content {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    
+    .testimonial-grid {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .container .container,
+    .container .header-container,
+    .container .section-header,
+    .container .section-title {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container,
+    .header-container,
+    .mobile-nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .item-card,
+    .category-item,
+    .testimonial-card,
+    .featured-dish,
+    .blog-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
