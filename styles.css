@@ -22,6 +22,7 @@ body {
     background-color: var(--light);
     color: var(--dark);
     overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
