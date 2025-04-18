@@ -31,6 +31,13 @@ body {
     padding: 0 15px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 /* Header */
 header {
     background-color: var(--dark);
