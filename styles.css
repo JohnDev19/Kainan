@@ -1413,6 +1413,18 @@ footer {
     gap: 50px;
 }
 
+.reservation-btn, 
+header .btn,
+.header-right .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: auto;
+}
+
+
 .reservation-info {
     padding-right: 30px;
 }
@@ -1936,8 +1948,11 @@ color: rgba(255, 255, 255, 0.9);
         font-size: 0.9rem;
     }
     
-    .category-grid {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    .reservation-btn,
+    header .btn,
+    .header-right .btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
     }
 }
 
@@ -1991,6 +2006,15 @@ color: rgba(255, 255, 255, 0.9);
         font-size: 0.85rem;
     }
     
+    .reservation-btn,
+    header .btn,
+    .header-right .btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        min-width: 0;
+        max-width: 120px;
+    }
+    
     .header .btn {
         padding: 8px 12px;
         font-size: 0.8rem;
@@ -2023,6 +2047,16 @@ color: rgba(255, 255, 255, 0.9);
     .btn {
         padding: 8px 14px;
         font-size: 0.8rem;
+    }
+
+    .reservation-btn,
+    header .btn,
+    .header-right .btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     header .btn {
@@ -2070,6 +2104,14 @@ color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 480px) {
+    .reservation-btn,
+    header .btn,
+    .header-right .btn {
+        padding: 5px 8px;
+        font-size: 0.7rem;
+        max-width: 100px;
+    }
+    
     header {
         padding: 10px 0;
     }
