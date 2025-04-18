@@ -32,7 +32,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header {
+    header {
         width: 90%;
         margin: 0 auto;
     }
