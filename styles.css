@@ -28,10 +28,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 13px;
+    padding: 0 15px;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background-color: var(--dark);
     color: white;
