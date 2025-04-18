@@ -55,6 +55,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logo {
@@ -1938,5 +1941,23 @@ section {
 @media (max-width: 576px) {
     section {
         padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: flex;
+    }
+
+    .header-container {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
     }
 }
