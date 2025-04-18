@@ -2,8 +2,10 @@
 
 Kainan is a fully responsive and customizable website template designed for showcasing authentic Filipino cuisine...a modern design, user-friendly, and some sections to highlight the restaurant's offerings, including a menu, testimonials, and a blog.
 
-![Image](assets/images/2.jpg)
-![Image](assets/images/1.jpg)
+<p align="center">
+    <img src="assets/images/2.jpg" alt="Dish 1" width="300" style="margin: 10px;">
+    <img src="assets/images/1.jpg" alt="Dish 2" width="300" style="margin: 10px;">
+</p>
 
 ## Features
 
