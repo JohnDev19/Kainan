@@ -31,13 +31,6 @@ body {
     padding: 0 15px;
 }
 
-@media (max-width: 768px) {
-    header {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
 /* Header */
 header {
     background-color: var(--dark);
@@ -55,9 +48,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .logo {
@@ -1916,48 +1906,4 @@ font-size: 1.2rem;
 font-size: 0.9rem;
 color: rgba(255, 255, 255, 0.9);
 }
-}
-
-section {
-    padding: 80px 0;
-}
-
-
-/* For tablets and smaller devices */
-@media (max-width: 992px) {
-    section {
-        padding: 60px 0;
-    }
-}
-
-/* For mobile devices */
-@media (max-width: 768px) {
-    section {
-        padding: 40px 0;
-    }
-}
-
-/* For very small devices (phones) */
-@media (max-width: 576px) {
-    section {
-        padding: 20px 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .mobile-nav {
-        display: flex;
-    }
-
-    .header-container {
-        padding: 10px 15px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .mobile-menu-btn {
-        display: flex;
-    }
 }
